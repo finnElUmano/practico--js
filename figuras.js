@@ -10,7 +10,6 @@ console.groupEnd();
 
 // Código del triangulo
 
-
 console.group("Triangulos");
 
 const perimetroTriangulo = (lado1, lado2, base )=> lado1 + lado2 + base;
@@ -38,3 +37,23 @@ const perimetroCirculo = (radio)=> diametroCirculo(radio) * PI;
 const areaCirculo = (radio, radio2)=> (radio * radio2) * PI;
 
 console.groupEnd();
+
+// Interactuamos con html
+
+const calcularPerimetroCuadrado = ()=>{
+const input = document.getElementById("InputCuadrado");
+const value = input.value;
+
+const perimetro = perimetroCuadrado(value);
+alert(perimetro);
+
+};
+
+const calcularAreaCuadrado = ()=>{
+
+const input = document.getElementById("InputCuadrado");
+const value = input.value;
+
+const area = areaCuadrado(value);
+alert(area);
+};
