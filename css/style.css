@@ -6,99 +6,70 @@
 }
 
 body {
-  background-color: #93b0d0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #EEEDE7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  height: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #E7D2CC), to(#FF2400));
+  background-image: linear-gradient(to right, #E7D2CC 20%, #FF2400);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 section {
-  background-color: #6f2205;
-  min-width: 250px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: 2px solid black;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  background-color: #E7D2CC;
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
 }
 section h2 {
   font-size: 19px;
-  color: white;
+  color: #000;
   margin: 15px auto 0 10px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
 }
 section i {
   font-size: 200%;
   margin: 0 10px 0 0;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 1;
-  grid-column: 6/7;
+  color: #FF2400;
 }
 section form {
-  background-color: #dee8ec;
-  padding: 10px 5px 10px 5px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 4;
-  grid-row: 3/7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
+  background-color: #EEEDE7;
+  padding: 10px 5px 5px 10px;
 }
 section form label {
   width: auto;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
+  font-weight: 55 0;
 }
 section form input {
   border: none;
-  margin: 10px;
-  width: 200px;
+  margin: 30px;
+  width: auto;
   background: none;
-  border-bottom: 2px solid red;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
+  border-bottom: 1px solid #000;
 }
 section form .btn-perimetro {
-  background-color: #a36c22;
-  padding: 3px 0;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2/5;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/5;
+  border: none;
+  background-color: #FF735C;
+  padding: 4px;
+  margin: 3px;
 }
 section form .btn-area {
-  background-color: #a36c22;
-  padding: 3px 0;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 4;
-  grid-row: 5/9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/5;
+  border: none;
+  background-color: #FF735C;
+  padding: 4px;
+  margin: 3px;
 }
