@@ -1,3 +1,4 @@
+-var text = ["Calcular Perimetro", "Calcular Area", "Calcular Diametro"]
 doctype html
 html(lang="en")
   head
@@ -18,9 +19,9 @@ html(lang="en")
         form( action="")
           label(for="InputCuadrado")
             p Escrive cuando mide cada lado del cuadrado:
-          input(id="InputCuadrado" type="number")
-          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCuadrado()") Calcular el Perimetro
-          button(class="btn-area" type="button" onclick="calcularAreaCuadrado()") Calcular el área
+          input(id="InputCuadrado" type="number" placeholder="lado")
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCuadrado()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaCuadrado()")=text[1] 
      
       section
         h2 Calcula el área de un Triangulo.
@@ -32,19 +33,19 @@ html(lang="en")
           input(id="lado2" type="number" placeholder="lado2")
           input(id="base" type="number" placeholder="base")
           input(id="altura" type="number" placeholder="altura")
-          button(class="btn-perimetro" type="button" onclick="calcularPerimetroTriangulo()") Calcular el Perimetro
-          button(class="btn-area" type="button" onclick="calcularAreaTriangulo()") Calcular el área
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroTriangulo()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaTriangulo()")=text[1]
       
       section
         h2 Calcula el área de un Circulo.
         i(class="far fa-circle")
         form( action="")
           label(for="InputCirculo")
-            p Escrive el diametro del Circulo:
-          input(id="InputCirculo" type="number")
-          button(class="btn-diametro" type="button" onclick="calcularDiametrocirculo()") Calcular Diametro
-          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCirculo()") Calcular Perimetro
-          button(class="btn-area" type="button" onclick="calcularAreaCirculo()") Calcular Área
+            p Escrive el radio del Circulo:
+          input(id="InputCirculo" type="number" placeholder="radio")
+          button(class="btn-diametro" type="button" onclick="calcularDiametrocirculo()")=text[2] 
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCirculo()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaCirculo()")=text[1] 
 
     footer 
       .foot

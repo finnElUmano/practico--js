@@ -9,10 +9,10 @@ $degradado: linear-gradient(to right,$color-variacion 20%, $color-primario);
 //- Mixins
 @mixin cajas {
   box-shadow: 0px 20px 20px 0px rgb(0, 0, 0,0.50);
-  background-color: $color-variacion;
+  background-color: $color-fondo;
   min-width: 200px;
   max-width: 300px;
-  height: auto;
+  height: 300px;
 }
 @mixin botones {
   border: none;
@@ -28,5 +28,5 @@ $degradado: linear-gradient(to right,$color-variacion 20%, $color-primario);
 
 body {
   background-color: $color-fondo;
-  display: flex;
+  display: block;
 }
