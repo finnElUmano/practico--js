@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Descuento y Porcentajes
+  body 
+    header
+      h1 Descuentos y Porcentajes
+      p Este es el segundo taller del Curso Práctico de JavaScript.
+
+  section
+    h2 Calcular el precio a pagar de tus productos con descuento.
+    form
+      label( for="InputPrice" ) Escrive el precio de tu producto:
+      input( id="InputPrice" type="number" )
+
+      label( for="InputDiscount" ) Escrive el descuento de tu producto:
+      input( id="InputDiscount" type="number" )
+      button( type="button" onclick="buttonDiscount()") Calcular el precio con descuento
+
+      p( id="resultPrice")
+  script(src="./descuentos.js" ) 
