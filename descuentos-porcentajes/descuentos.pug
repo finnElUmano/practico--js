@@ -5,6 +5,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Descuento y Porcentajes
+    link(rel="stylesheet", href="./estilos.css")
   body 
     header
       h1 Descuentos y Porcentajes
@@ -13,12 +14,17 @@ html(lang="en")
   section
     h2 Calcular el precio a pagar de tus productos con descuento.
     form
-      label( for="InputPrice" ) Escrive el precio de tu producto:
+      label( for="InputPrice" ) Escrive el precio de tu producto: 
       input( id="InputPrice" type="number" )
 
       label( for="InputDiscount" ) Escrive el descuento de tu producto:
       input( id="InputDiscount" type="number" )
-      button( type="button" onclick="buttonDiscount()") Calcular el precio con descuento
+
+      label( for="InputCupon" palceholder="Escrive tu cupon:") Escrive tu cupon:
+      input( id="InputCupon" type="text" )
+
+      button( type="button" onclick="buttonDiscount()") Descuento
+      button( type="button" onclick="buttonCupon()") Cupon
 
       p( id="resultPrice")
   script(src="./descuentos.js" ) 
