@@ -4,47 +4,35 @@ const calcularPrecioConDescuento = (precio, descuento) => {
   return precioConDescuento;
 };
 
-const calcularPrecioConCupon = (precio, descuento, cupon) => {
-  const porcentajePrecioConDescuento = 100 - descuento;
-  const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
-  const precioConDescuentoCupon = precioConDescuento - cupon;
-
-  if(precioConDescuentoCupon) {
-    return (`El precio total con cupon es: $ ${precioConDescuentoCupon}.`)
-  } else {
-    return (`Error! cupon invalido!`);
-  }
-};
-
 const cupons = ["cupon1", "cupon2", "cupon3"];
 
 const buttonCupon = () => {
+  const inputPrice1 = document.getElementById("InputPrice");
+  const priceValue1 = inputPrice1.value;
   const inputCupon = document.getElementById("InputCupon");
   const cuponValue = inputCupon.value;
-  const inputPrice = document.getElementById("InputPrice");
-  const priceValue = inputPrice.value;
-  const inputDiscount = document.getElementById("InputDiscount");
-  const discountValue = inputDiscount.value;
 
-  let descuento;
+  let discountValue;
 
-  switch (discountValue) {
-    case "cupon1":
-      descuento =25;
-    case "cupon2":
-      descuento = 15;
-    case "cupon3":
-      descuento = 5;
+  switch (cuponValue) {
+    case cupons[0]:
+      discountValue =25;
+    break;
+    case cupons[1]:
+      discountValue = 15;
+    break;
+    case cupons[2]:
+      discountValue = 5;
+    break;
   }
 
-  const precioConCupon = calcularPrecioConCupon(
-    priceValue,
+  const precioConCupon = calcularPrecioConDescuento(
+    priceValue1,
     discountValue,
-    descuento
   );
 
-  const resultC = document.getElementById("resultPrice");
-  resultC.innerText = "El precio con cupon son: $" + precioConCupon;
+  const resultC = document.getElementById("resultCupon");
+  resultC.innerText = "El precio con cupon es: $" + precioConCupon;
 };
 
 const buttonDiscount = () => {
@@ -58,6 +46,6 @@ const buttonDiscount = () => {
     discountValue
   );
 
-  const resultP = document.getElementById("resultPrice");
+  const resultP = document.getElementById("resultDiscount");
   resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
 };
