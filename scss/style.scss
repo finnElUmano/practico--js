@@ -1,0 +1,61 @@
+@import "component/grids";
+@import "component/globales.scss";
+
+header {
+  width: 100%;
+  height: 100px;
+  background-image: $degradado;
+  margin-bottom: 20px;
+}
+main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  @include cajas;
+  h2 {
+    font-size: 19px;
+    color: #000;
+    margin: 15px 40px 5px 5px;
+  }
+  i {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    font-size: 300%;
+    color: $color-primario;
+    margin: 35px 5px 5px auto;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $color-fondo;
+    padding: 5px;
+    height: 100%;
+    label {
+      width: auto;
+      font-weight: 55 0;
+    }
+    input {
+      border: none;
+      width: auto;
+      background: none;
+      border-bottom: 1px solid #000;
+    }
+    button {
+      @include botones();
+    }
+  }
+}
+footer {
+  height: 100px;
+  background-image: $degradado;
+  margin-top: 20px;
+}

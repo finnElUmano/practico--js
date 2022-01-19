@@ -1,0 +1,32 @@
+//variables
+$color-fondo: #EEEDE7;
+$color-primario: #FF2400;
+$color-secuandario: #FF735C;
+$color-emergencia: #868B8E;
+$color-variacion:#E7D2CC;
+$degradado: linear-gradient(to right,$color-variacion 20%, $color-primario);
+//
+//- Mixins
+@mixin cajas {
+  box-shadow: 0px 20px 20px 0px rgb(0, 0, 0,0.50);
+  background-color: $color-fondo;
+  min-width: 200px;
+  max-width: 300px;
+  height: 300px;
+}
+@mixin botones {
+  border: none;
+  background-color: $color-secuandario;
+  padding: 4px; 
+  margin: 3px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $color-fondo;
+  display: block;
+}

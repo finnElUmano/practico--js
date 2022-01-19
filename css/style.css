@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #EEEDE7;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #E7D2CC), to(#FF2400));
+  background-image: linear-gradient(to right, #E7D2CC 20%, #FF2400);
+  margin-bottom: 20px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  background-color: #EEEDE7;
+  min-width: 200px;
+  max-width: 300px;
+  height: 300px;
+}
+section h2 {
+  font-size: 19px;
+  color: #000;
+  margin: 15px 40px 5px 5px;
+}
+section i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  font-size: 300%;
+  color: #FF2400;
+  margin: 35px 5px 5px auto;
+}
+section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #EEEDE7;
+  padding: 5px;
+  height: 100%;
+}
+section form label {
+  width: auto;
+  font-weight: 55 0;
+}
+section form input {
+  border: none;
+  width: auto;
+  background: none;
+  border-bottom: 1px solid #000;
+}
+section form button {
+  border: none;
+  background-color: #FF735C;
+  padding: 4px;
+  margin: 3px;
+}
+
+footer {
+  height: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #E7D2CC), to(#FF2400));
+  background-image: linear-gradient(to right, #E7D2CC 20%, #FF2400);
+  margin-top: 20px;
+}

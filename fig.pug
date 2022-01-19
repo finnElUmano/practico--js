@@ -1,0 +1,53 @@
+-var text = ["Calcular Perimetro", "Calcular Area", "Calcular Diametro"]
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Fguras Geometrias | Curso Practico. 
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+  body 
+    header
+      h1 Figuras Geométricas.
+      p Este es el primer curso practicode JS
+    main
+      section
+        h2 Calcula el área de un cuadrado.
+        i(class="far fa-square")
+        form( action="")
+          label(for="InputCuadrado")
+            p Escrive cuando mide cada lado del cuadrado:
+          input(id="InputCuadrado" type="number" placeholder="lado")
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCuadrado()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaCuadrado()")=text[1] 
+     
+      section
+        h2 Calcula el área de un Triangulo.
+        i(class="fas fa-exclamation-triangle")
+        form( action="")
+          label(for="")
+            p Escrive cuando mide cada lado del Triangulo:
+          input(id="lado1" type="number" placeholder="lado1")
+          input(id="lado2" type="number" placeholder="lado2")
+          input(id="base" type="number" placeholder="base")
+          input(id="altura" type="number" placeholder="altura")
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroTriangulo()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaTriangulo()")=text[1]
+      
+      section
+        h2 Calcula el área de un Circulo.
+        i(class="far fa-circle")
+        form( action="")
+          label(for="InputCirculo")
+            p Escrive el radio del Circulo:
+          input(id="InputCirculo" type="number" placeholder="radio")
+          button(class="btn-diametro" type="button" onclick="calcularDiametrocirculo()")=text[2] 
+          button(class="btn-perimetro" type="button" onclick="calcularPerimetroCirculo()")=text[0] 
+          button(class="btn-area" type="button" onclick="calcularAreaCirculo()")=text[1] 
+
+    footer 
+      .foot
+        h1 Figuras Geometricas.
+    script(src="./figuras.js") 
