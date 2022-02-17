@@ -18,4 +18,4 @@ const calcMediaAritmetica =(list)=> {
   );
   const promedioList = sumaList / list.length;
   return promedioList;
-}
+};

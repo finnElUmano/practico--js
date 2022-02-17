@@ -18,13 +18,13 @@ html(lang="en")
       input( id="InputPrice" type="number" )
 
       label( for="InputDiscount" ) Escrive el descuento de tu producto:
-      input( id="InputDiscount" type="number" )
+      input( id="InputDiscount" type="text" )
 
       label( for="InputCupon" palceholder="Escrive tu cupon:") Escrive tu cupon:
       input( id="InputCupon" type="text" )
 
       button( type="button" onclick="buttonDiscount()") Descuento
-      button( type="button" onclick="buttonCupon()") Cupon
+      button( type="button" onclick="buttonDiscount()") Cupon
 
       p( id="resultPrice")
   script(src="./descuentos.js" ) 
