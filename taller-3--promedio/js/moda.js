@@ -12,9 +12,9 @@ const  butonCalcModa =(numbers)=> {
   console.log(Object.entries(listaCuenta));
   funArray = Object.entries(listaCuenta).sort(
     function(a , b){
-      return a - b;
+      return a[1] - b[1];
     }
   );
-  const moda = funArray[funArray.length - 1]
+  const moda = funArray[funArray.length - 1];
   return moda;
 }
