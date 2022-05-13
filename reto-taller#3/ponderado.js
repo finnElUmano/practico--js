@@ -23,16 +23,18 @@ const notes = [
 const notasConCredito = notes.map(function(noteObjetc) {
   return noteObjetc.note * noteObjetc.credit;
 });
-//console.log(notasConCredito);
+
 //Sumar todos los elementos del arrenglo de elementos
 //multiplicados por su peso!
 const sumOfNotesWithCredit = notasConCredito.reduce(
   (a=0, b) => a + b
 );
-console.log(sumOfNotesWithCredit);
-//sumar todos los pesosss(creditos)!
+
+//obetiendo los creditos
 const creditos = notes.map((noteObjetc)=> noteObjetc.credit);
+//sumar todos los pesosss(creditos)!
 const sumaOfcreditos = creditos.reduce((a=0,b)=> a+b);
+
 //hacer la divicion entre ambas sumas!
 const promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumaOfcreditos;
 

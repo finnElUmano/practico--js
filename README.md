@@ -36,3 +36,12 @@ Practicando js
 - Hacer funciones mas inteligentes
 
 ## Taller 4 : Analisis Salarial
+- Primer paso: Obtener la lista de salarios.
+-Segundo paso: Calcular top 10% de salarios.
+
+## Reto "Tema libre"
+- Plantear muy bien el problema.
+- Hacer las formulas
+- Definir variables y funciones.
+- Organizar el codigo.
+- Publicarlo en "github.com"
