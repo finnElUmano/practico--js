@@ -1,3 +1,4 @@
+let numeros = [1,2,4,5,6,4];
 const  butonCalcModa =(numbers)=> {
   const listaCuenta = {};
   numbers.map(
@@ -9,6 +10,7 @@ const  butonCalcModa =(numbers)=> {
       }
     }
   );
+  console.log(listaCuenta);
   console.log(Object.entries(listaCuenta));
   funArray = Object.entries(listaCuenta).sort(
     function(a , b){
@@ -18,3 +20,4 @@ const  butonCalcModa =(numbers)=> {
   const moda = funArray[funArray.length - 1];
   return moda;
 }
+butonCalcModa(numeros);

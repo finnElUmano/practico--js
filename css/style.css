@@ -1,105 +1,134 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #EEEDE7;
   display: block;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(185deg, hsl(240deg, 100%, 20%) 0%, hsl(238deg, 64%, 27%) 22%, hsl(231deg, 54%, 33%) 35%, hsl(222deg, 49%, 37%) 45%, hsl(213deg, 47%, 41%) 54%, hsl(204deg, 48%, 44%) 62%, hsl(195deg, 49%, 47%) 70%, hsl(188deg, 53%, 49%) 76%, hsl(181deg, 60%, 50%) 83%, hsl(177deg, 77%, 53%) 90%, hsl(174deg, 100%, 50%) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  width: 100%;
-  height: 100px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #E7D2CC), to(#FF2400));
-  background-image: linear-gradient(to right, #E7D2CC 20%, #FF2400);
-  margin-bottom: 20px;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  color: azure;
 }
 
 section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: azure;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5px;
-  -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-  background-color: #EEEDE7;
-  min-width: 200px;
-  max-width: 300px;
-  height: 300px;
-}
-section h2 {
-  font-size: 19px;
-  color: #000;
-  margin: 15px 40px 5px 5px;
-}
-section i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: absolute;
-  font-size: 300%;
-  color: #FF2400;
-  margin: 35px 5px 5px auto;
-}
-section form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #EEEDE7;
-  padding: 5px;
-  height: 100%;
-}
-section form label {
-  width: auto;
-  font-weight: 55 0;
-}
-section form input {
-  border: none;
-  width: auto;
-  background: none;
-  border-bottom: 1px solid #000;
-}
-section form button {
-  border: none;
-  background-color: #FF735C;
-  padding: 4px;
-  margin: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer {
-  height: 100px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #E7D2CC), to(#FF2400));
-  background-image: linear-gradient(to right, #E7D2CC 20%, #FF2400);
-  margin-top: 20px;
+nav ol {
+  list-style: none;
+}
+nav ol li {
+  padding: 20px;
+}
+nav ol li a {
+  color: azure;
+}
+
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn-neon:hover {
+  background: #a945c7;
+  -webkit-box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+          box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#a945c7));
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span1 {
+  left: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#a945c7));
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#a945c7));
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#a945c7));
+  background: linear-gradient(360deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
 }

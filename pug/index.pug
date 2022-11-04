@@ -1,0 +1,54 @@
+//- mixin neon(ruta, name)
+//-   li
+//-     a(href="../"+ruta)=name
+//-       span(id="span1")
+//-       span(id="span2")
+//-       span(id="span3")
+//-       span(id="span4")
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Curso Practico de Javascript 
+    link(rel="stylesheet", href="../css/style.css")
+  body 
+    header 
+      h1 Talleres del Curso Practico  de Javascript
+      p Estos retos fueron realizados por Fercho!
+    section
+      h2 Lista de talleres:
+      nav
+        ol
+          li
+            a( href="../taller-1--geometria/fig.html" class="btn-neon") Taller #1
+              span(id="span1")
+              span(id="span2")
+              span(id="span3")
+              span(id="span4")
+          li
+            a( href="../taller-2--precios-descuentos/descuentos.html" class="btn-neon") Taller #2
+              span(id="span1")
+              span(id="span2")
+              span(id="span3")
+              span(id="span4")
+          li
+            a( href="../taller-3--promedio/html/mediana.html" class="btn-neon") Taller #3
+              span(id="span1")
+              span(id="span2")
+              span(id="span3")
+              span(id="span4")
+          li
+            a( href="../taller-4analisisSalarial/salarios.html" class="btn-neon") Taller #4
+              span(id="span1")
+              span(id="span2")
+              span(id="span3")
+              span(id="span4")
+          li
+            a( href="../reto/finished_class/prom-prom.html" class="btn-neon") Reto 
+              span(id="span1")
+              span(id="span2")
+              span(id="span3")
+              span(id="span4")
